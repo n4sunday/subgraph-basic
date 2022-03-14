@@ -1,0 +1,13 @@
+type ExampleEntity @entity {
+  id: ID!
+  count: BigInt!
+  amount: BigInt! # uint256
+}
+
+type TransferEntity  @entity {
+  id: ID!
+  txHash: ID!
+  from: Bytes!
+  to: Bytes!
+  value: BigInt!
+}
