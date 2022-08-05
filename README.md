@@ -31,3 +31,11 @@ graph deploy --product hosted-service n4sunday/Subgraphbasic
   }
 }
 ```
+
+### Deploy Graph Node
+
+```sh
+graph create n4sunday/Subgraphbasic --node http://localhost:8020
+# graph deploy --ipfs http://localhost:5001 --node http://localhost:8020 n4sunday/Subgraphbasic ./subgraph.yaml
+graph deploy --ipfs http://localhost:5001 --node http://localhost:8020 n4sunday/Subgraphbasic
+```
